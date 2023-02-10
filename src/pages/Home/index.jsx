@@ -7,7 +7,7 @@ const Home = () => {
   const [dataCourse2, setDataCourse2] = useState([])
 
   const fetchData =async()=>{
-     const response= await fetch('http://api.alquran.cloud/v1/surah')
+     const response= await fetch('https://wizard-world-api.herokuapp.com/Elixirs')
      const data = await response.json()
      setDataCourse(data?.data)
   }
@@ -27,24 +27,24 @@ const Home = () => {
 console.log(dataCourse2)
   return (
     <>
-     <h1>Al-Qur'an</h1>
-     <h2> Daftar Nama Surat dalam Al-Qur'an</h2>
+     <h1>Wizard Worlds</h1>
+     <h2> Daftar Nama Spell Harry Potter</h2>
 <br></br><br></br>
 <table class="coba">
   <thead>
     <tr>
-        <th>ID Surat</th>
-        <th>Nama Surat</th>
-        <th>Jenis Surat</th>
+        <th>Nama Spell</th>
+        <th>Efek</th>
+        <th>Karakteristik</th>
     </tr>
   </thead>
   <tbody id="coba">
     {dataCourse && dataCourse.map((item)=>{
       return(
         <tr>
-        <td>{item.number}</td>
         <td>{item.name}</td>
-        <td>{item.revelationType}</td>
+        <td>{item.effect}</td>
+        <td>{item.characteristics}</td>
       </tr>
       )
     })}
