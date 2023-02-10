@@ -23,7 +23,8 @@ const Home = () => {
     fetchData()
     fetchData2()
   },[])
-  
+
+  console.log(dataCourse)
 console.log(dataCourse2)
   return (
     <>
