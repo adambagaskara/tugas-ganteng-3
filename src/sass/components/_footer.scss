@@ -1,0 +1,7 @@
+footer {
+    background-color: $color-primary-light;
+    .container {
+      background-color: alpha($color: #000000);
+      color: hsl(180, 100%, 50%);
+    }
+}

@@ -1,0 +1,14 @@
+header {
+  background-color: $color-primary-light;
+  .header {
+    background-color: darkolivegreen;
+    font-size: x-large;
+    color: ivory;
+    text-align: center;
+  }
+  @include media(mobile) {
+    .header {
+      background-color: $color-secondary-dark;
+    }
+  }
+}

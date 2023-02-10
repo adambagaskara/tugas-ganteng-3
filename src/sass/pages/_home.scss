@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+th {
+    background-color: #04AA6D;
+  color: white;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    tr:hover {background-color: coral;}
+}
