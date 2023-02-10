@@ -7,7 +7,7 @@ const Home = () => {
   const [dataCourse2, setDataCourse2] = useState([])
 
   const fetchData =async()=>{
-     const response= await fetch('http://localhost:4000/testapi2/api')
+     const response= await fetch('http://api.alquran.cloud/v1/surah')
      const data = await response.json()
      setDataCourse(data?.data)
   }
@@ -27,24 +27,24 @@ const Home = () => {
 console.log(dataCourse2)
   return (
     <>
-     <h1>Dummy User Data</h1>
-     <h2> Daftar Nama Buronan</h2>
+     <h1>Al-Qur'an</h1>
+     <h2> Daftar Nama Surat dalam Al-Qur'an</h2>
 <br></br><br></br>
 <table class="coba">
   <thead>
     <tr>
-        <th>ID Tahanan</th>
-        <th>Nama</th>
-        <th>E-mail</th>
+        <th>ID Surat</th>
+        <th>Nama Surat</th>
+        <th>Jenis Surat</th>
     </tr>
   </thead>
   <tbody id="coba">
     {dataCourse && dataCourse.map((item)=>{
       return(
         <tr>
-        <td>{item.user_id}</td>
-        <td>{item.user_name}</td>
-        <td>{item.user_email}</td>
+        <td>{item.number}</td>
+        <td>{item.name}</td>
+        <td>{item.revelationType}</td>
       </tr>
       )
     })}
