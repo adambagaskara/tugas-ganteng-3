@@ -7,7 +7,7 @@ const Home = () => {
   const [dataCourse2, setDataCourse2] = useState([])
 
   const fetchData =async()=>{
-     const response= await fetch('http://api.alquran.cloud/v1/surah')
+     const response= await fetch('https://api.alquran.cloud/v1/surah')
      const data = await response.json()
      console.log(data)
      setDataCourse(data?.data)
