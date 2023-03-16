@@ -4,7 +4,7 @@ import "./style.scss";
 const Home = () => {
 
   const [dataCourse, setDataCourse] = useState([])
-  const [dataCourse2, setDataCourse2] = useState([])
+  // const [dataCourse2, setDataCourse2] = useState([])
 
   const fetchData =async()=>{
      const response= await fetch('https://api.alquran.cloud/v1/surah')
@@ -13,16 +13,16 @@ const Home = () => {
      setDataCourse(data?.data)
   }
 
-     const fetchData2 =async()=>{
-     const response= await fetch('https://api-course.arkademi.com/api/v1/course/revamp-categories/populer')
-     const data = await response.json()
-     console.log(data)
-    setDataCourse2(data?.data)
-     }
+    //  const fetchData2 =async()=>{
+    //  const response= await fetch('https://api-course.arkademi.com/api/v1/course/revamp-categories/populer')
+    //  const data = await response.json()
+    //  console.log(data)
+    // setDataCourse2(data?.data)
+    //  }
 
   useEffect(()=>{
     fetchData()
-    fetchData2()
+    // fetchData2()
   },[])
 
 console.log(dataCourse2)
@@ -51,7 +51,7 @@ console.log(dataCourse2)
       </tr>
       )
     })}
-   
+{/*    
   </tbody>
 </table>
 <h1>API Course Reguler Arkademi</h1>
@@ -75,7 +75,7 @@ console.log(dataCourse2)
       </tr>
       )
     })}
-   
+    */}
   </tbody>
 </table>
 

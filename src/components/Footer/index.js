@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer>
         <div className="container">
-          <h1>Sekian dan Trima Gaji</h1>
+          {/* <h1>Sekian dan Trima Gaji</h1> */}
         </div>
       </footer>
     </>
