@@ -25,7 +25,7 @@ const Home = () => {
     // fetchData2()
   },[])
 
-console.log(dataCourse2)
+//console.log(dataCourse2)
   return (
     <>  
      <h1>Daftar Surat Al-Qur'an</h1>
